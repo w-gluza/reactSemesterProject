@@ -4,6 +4,7 @@
     "contact": "Contact"
   },
   "header": {
-    "h1": "English H1 Tag goes here "
+    "h1": "You are logged in ",
+    "p": "You are not logged in. Access denied "
   }
 }

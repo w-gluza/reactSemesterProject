@@ -2,13 +2,25 @@ import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import allReducers from './redux/reducers/';
 
 // import i18n (needs to be bundled ;))
 import './i18n';
 
+// STORE -> GLOBALIZED STATE
+
+const store = createStore(
+  allReducers,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
 ReactDOM.render(
   <Suspense fallback="loading...">
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </Suspense>,
   document.getElementById('root')
 );

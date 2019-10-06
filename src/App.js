@@ -1,5 +1,4 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next';
 import './main.scss';
 
 // components imports
@@ -16,4 +15,4 @@ function App() {
   );
 }
 
-export default withTranslation('common')(App);
+export default App;

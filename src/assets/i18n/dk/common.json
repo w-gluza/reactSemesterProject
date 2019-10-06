@@ -4,6 +4,7 @@
     "contact": "Kontakt"
   },
   "header": {
-    "h1": "Danish H1 Tag goes here "
+    "h1": "Danish You are logged in ",
+    "p": "Danish You are not logged in. Access denied "
   }
 }
