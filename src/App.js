@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { withTranslation } from 'react-i18next';
+import './main.scss';
+
+// components imports
+import Nav from './components/Nav/Nav';
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav></Nav>
+      <Header></Header>
+      <header>{/* <h1> {this.props.t('header.h1')}</h1> */}</header>
+    </>
   );
 }
 
-export default App;
+export default withTranslation('common')(App);

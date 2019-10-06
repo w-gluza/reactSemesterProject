@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "about": "About",
+    "contact": "Contact"
+  },
+  "header": {
+    "h1": "English H1 Tag goes here "
+  }
+}
